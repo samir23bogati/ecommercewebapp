@@ -3,7 +3,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import HeaderSection from "../components/HeaderSection";
 import FooterSection from "../components/FooterSection";
 //import page components
-import Home from "../pages/home";
+import Home from "./../pages/Home";
 
 export default function AppRouting() {
   return (
