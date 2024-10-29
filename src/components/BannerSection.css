@@ -1,0 +1,68 @@
+/* Banner Section */
+.banner-section {
+  padding: 50px 0;
+  background: #115061;
+  min-height: 500px; /* Minimum height of the section */
+}
+
+.banner-slide-item {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align items vertically */
+  justify-content: space-between; /* Space between text and image */
+}
+
+.banner-slide-item img {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the area without distortion */
+  flex: 1; /* Allow the image to grow */
+}
+
+.banner-slide-item h4,
+.banner-slide-item h3,
+.banner-slide-item p {
+  color: #fff; /* White text for better contrast */
+  margin: 10px 0; /* Add margin for spacing */
+}
+
+.banner-slide-item h4 {
+  font-size: 18px; /* Size for the subheading */
+}
+
+.banner-slide-item h3 {
+  font-size: 60px; /* Size for the main heading */
+  font-weight: 700; /* Bold weight for emphasis */
+}
+
+.banner-slide-item p {
+  font-size: 24px; /* Size for the paragraph */
+}
+
+.banner-slide-item a {
+  display: inline-block; /* Display as inline-block for padding */
+  margin-top: 15px; /* Space above the button */
+  padding: 13px 30px; /* Padding for button */
+  background: transparent; /* Transparent background */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #fff; /* White border */
+  color: #fff; /* White text */
+  text-decoration: none; /* Remove underline */
+  transition: all linear 0.3s; /* Smooth transition for hover effect */
+}
+
+.banner-slide-item a:hover {
+  background: #fff; /* White background on hover */
+  color: #000; /* Black text on hover */
+}
+
+.slick-dots {
+  bottom: 20px; /* Positioning for dots */
+}
+
+.slick-dots li button:before {
+  color: #fff; /* Dots color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff; /* Active dot color */
+}

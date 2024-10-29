@@ -1,0 +1,119 @@
+.ads-section {
+    padding: 80px 0;
+    background-color: #eee;
+}
+
+.ads-left-section, .ads-right-section {
+    background-color: #fff; /* Changed to white for better contrast */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.ads-left-section:hover, .ads-right-section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ads-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 400px; /* Increased height for better visibility */
+    padding: 50px; /* Increased padding for more space around content */
+}
+
+.ads-product-content {
+    flex: 1;
+    padding-right: 20px; /* Increased padding for better spacing */
+}
+
+.ads-product-content h4 {
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.ads-product-content h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.ads-product-content h2 a span {
+    display: block;
+}
+
+.ads-product-content h2 a {
+    display: inline-block;
+    margin: 10px 0 20px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;  
+    cursor: pointer;
+}
+
+.ads-product-content a {
+    color: #1a73e8;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.ads-product-content a:hover {
+    color: #ff5722;
+}
+
+.ads-product-thumbnail {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    width: 100%; /* Full width to maintain responsiveness */
+    height: 250px; /* Set a specific height for the image container */
+    overflow: hidden; /* Ensure any overflow is hidden */
+    border-radius: 10px; /* Keep rounded corners */
+}
+
+.ads-product-thumbnail img {
+    width: 100%; /* Ensure the image takes the full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the container */
+    transition: transform 0.3s ease;
+}
+
+/* Specific styles for ad2 */
+.ad2-thumbnail {
+    height: 180px; /* Increased height for ad2 */
+}
+
+.ads-product:hover .ads-product-thumbnail img {
+    transform: scale(1.05);
+}
+
+/* Adjust layout for mobile responsiveness */
+@media (max-width: 768px) {
+    .ads-product {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .ads-product-thumbnail {
+        width: 100%; /* Make the image full width on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .ads-product-content {
+        padding-right: 0;
+    }
+}

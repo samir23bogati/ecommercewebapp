@@ -1,0 +1,29 @@
+.features-section{
+    padding-bottom: 100px;
+}
+.features-section .row > div {
+    padding-left: 4px;
+    padding-right: 3px;
+}
+.features-section-item{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #F7F7F9;
+}
+.features-section-item span:first-child{
+    width: 50px;
+    text-align: center;
+}
+.features-section-item .fa-solid{
+    color:#c0392b;
+    font-size: 35px;
+}
+.features-section-item h4{
+    color:black;
+    font-size: 18px;
+}
+.features-section-item p{
+    color: #000;
+    font-size: 14px;
+}

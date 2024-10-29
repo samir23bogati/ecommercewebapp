@@ -1,0 +1,100 @@
+/* Footer Container */
+.footer {
+    padding: 50px 15px;
+    background-color: #115061;
+    color: #fff;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Content */
+.footer-content h4 {
+    font-size: 1.25rem; /* 20px */
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer-content p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.8;
+    margin-top: 1.25rem;
+    max-width: 280px;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content ul li::marker {
+    color: #fff;
+}
+
+/* Footer Links */
+.footer-content ul li a {
+    color: #fff;
+    font-size: 0.875rem; /* 14px */
+    text-decoration: none;
+    display: block;
+    padding: 0.2rem 0;
+    transition: color 0.3s ease;
+}
+
+.footer-content ul li a:hover {
+    color: #b3e5fc; /* Light blue on hover */
+}
+
+/* Social Media Links */
+.footer-social-link {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.footer-social-link a {
+    color: #fff;
+    font-size: 1.5rem; /* Icon size */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social-link a:hover {
+    color: #b3e5fc;
+    transform: scale(1.1);
+}
+
+/* Copyright */
+.copyright {
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 1rem; /* 16px */
+    color: #fff;
+}
+.footer-content img {
+    width: 25%; /* Resize to 1/4 of its original size */
+    max-width: 100px; /* Ensure the logo doesn’t get too large on larger screens */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 1rem; /* Add spacing below the logo */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+
+    .footer-content {
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-social-link {
+        justify-content: center;
+    }
+}
