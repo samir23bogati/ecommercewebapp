@@ -19,7 +19,7 @@ export default function BannerSection() {
     const slides = [
         {
             id: 1,
-            title: "The Best Notepad Collection 2025",
+            title: "The Upcoming Best E-Mart In KTM",
             price: "$555",
             offer: "35%",
             imgSrc: slide2,
@@ -27,7 +27,7 @@ export default function BannerSection() {
         },
         {
             id: 2,
-            title: "The Best Mobile Collection 2025",
+            title: "Your one-stop shop, where Kathmandu shops like a Pro",
             price: "$400",
             offer: "50%",
             imgSrc: slide1,
@@ -35,7 +35,7 @@ export default function BannerSection() {
         },
         {
             id: 3,
-            title: "The Best Smart Watch Collection 2025",
+            title: "Shop smarter, not harder – only at the best e-mart in Kathmandu",
             price: "$999",
             offer: "50%",
             imgSrc: slide3,
