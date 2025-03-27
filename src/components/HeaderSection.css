@@ -78,7 +78,7 @@ header {
   /* Bottom Header */
   .header-bottom {
     background-color: #f0f0f0;
-    padding: 15px 0;
+    padding: 10px 0;
   }
   
   .header-bottom-content {
@@ -224,3 +224,112 @@ header {
           }
         }
     }
+    @media (max-width: 767px) {
+      /* Top Header */
+      .header-top-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .header-top-content-right ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+      }
+    
+      /* Middle Header */
+      .header-middle {
+        text-align: center;
+        padding: 10px 0;
+      }
+    
+      .header-search {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+    
+      .header-search-form {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+      }
+    
+      .form-control,
+      .select,
+      .header-search-form button {
+        width: 100%;
+        margin-top: 10px;
+      }
+    
+      .header-carts {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+      }
+    
+      .header-carts-info {
+        flex-direction: row;
+        gap: 10px;
+      }
+    
+      .header-carts-info a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    
+      /* Bottom Header */
+      .header-bottom-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .header-bottom-nav-category {
+        width: 100%;
+      }
+    
+      .category-main-menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+      }
+    
+      .category-sub-menu-list {
+        padding-left: 0;
+        text-align: center;
+      }
+    
+      .header-bottom-nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        width: 100%;
+      }
+    
+      .header-bottom-hotline {
+        text-align: center;
+        width: 100%;
+        margin-top: 15px;
+      }
+    
+      .header-bottom-hotline h5 {
+        font-size: 16px;
+      }
+    
+      /* Adjust icon and text size for better visibility */
+      .header-carts-info a i {
+        font-size: 22px;
+      }
+    
+      .header-carts-info span {
+        font-size: 14px;
+      }
+    }
+    
