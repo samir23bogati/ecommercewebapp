@@ -1,10 +1,11 @@
+import "./HeaderSection.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "./../assets/images/logo.jpg";
 
 export default function HeaderSection() {
-  const [wishlist, setWishlist] = useState(0); // Corrected typo
-  const [cart, setCart] = useState(0);
+  const [wishlist] = useState(0); 
+  const [cart] = useState(0);
 
   return (
     <header>
@@ -13,18 +14,18 @@ export default function HeaderSection() {
         <div className="container">
           <div className="header-top-content">
             <div className="header-top-content-left">
-              <h4>Express shipping free for orders over $999.</h4>
+              <h4>Express shipping free for orders over NRS 3000.</h4>
             </div>
             <div className="header-top-content-right">
               <ul>
                 <li>
-                  English <i className="fas fa-angle-down"></i>
+                 SHOP  <i className="fas fa-angle-down"></i>
                 </li>
                 <li>
-                  USD <i className="fas fa-angle-down"></i>
+                   ORDER<i className="fas fa-angle-down"></i>
                 </li>
                 <li>
-                  Setting <i className="fas fa-angle-down"></i>
+                 RE-SALE<i className="fas fa-angle-down"></i>
                 </li>
               </ul>
             </div>
@@ -51,10 +52,10 @@ export default function HeaderSection() {
                       placeholder="Search for Products"
                     />
                     <select className="form-control">
-                      <option value="">Select Category</option>
-                      <option value="electronics">Electronics</option>
-                      <option value="fashion">Fashion</option>
-                      <option value="beauty">Beauty</option>
+                    <option value="">Select Category</option>
+                      <option value="homemade">Home Made</option>
+                      <option value="resale">Re-Sale</option>
+                      <option value="souvenir">Souvenir</option>
                     </select>
                     <button className="btn btn-primary">
                       <i className="fa fa-search"></i>
@@ -94,32 +95,32 @@ export default function HeaderSection() {
           <i className="fa-solid fa-list"></i> All Categories
         </h4>
         <ul className="category-main-menu-list">
-          <li>
-            <Link to="#">Headphones <i className="fa fa-angle-right"></i></Link>
-            <ul className="category-sub-menu-list">
-              <li><Link to="#">Headphones 1 <i className="fa fa-angle-right"></i></Link></li>
-              <li><Link to="#">Headphones 2 <i className="fa fa-angle-right"></i></Link></li>
-              <li><Link to="#">Smart Watch 3 <i className="fa fa-angle-right"></i></Link></li>
-              <li><Link to="#">Bluetooth 4 <i className="fa fa-angle-right"></i></Link></li>
-            </ul>
-          </li>
-          <li>
-            <Link to="#">Mobile <i className="fa fa-angle-right"></i></Link>
-            <ul className="category-sub-menu-list">
-              <li><Link to="#">Headphones 1 <i className="fa fa-angle-right"></i></Link></li>
-              <li><Link to="#">Headphones 2 <i className="fa fa-angle-right"></i></Link></li>
-              <li><Link to="#">Smart Watch 3 <i className="fa fa-angle-right"></i></Link></li>
-              <li><Link to="#">Bluetooth 4 <i className="fa fa-angle-right"></i></Link></li>
-            </ul>
-          </li>
-          <li>
-            <Link to="#">Ipad <i className="fa fa-angle-right"></i></Link>
-            <ul className="category-sub-menu-list">
-              <li><Link to="#">Headphones 1 <i className="fa fa-angle-right"></i></Link></li>
-              <li><Link to="#">Headphones 2 <i className="fa fa-angle-right"></i></Link></li>
-              <li><Link to="#">Smart Watch 3 <i className="fa fa-angle-right"></i></Link></li>
-              <li><Link to="#">Bluetooth 4 <i className="fa fa-angle-right"></i></Link></li>
-            </ul>
+        <li>
+                  <Link to="#">Home Made <i className="fa fa-angle-right"></i></Link>
+                  <ul className="category-sub-menu-list">
+                    <li><Link to="#">Home Made Item 1 <i className="fa fa-angle-right"></i></Link></li>
+                    <li><Link to="#">Home Made Item 2 <i className="fa fa-angle-right"></i></Link></li>
+                    <li><Link to="#">Home Made Item 3 <i className="fa fa-angle-right"></i></Link></li>
+                    <li><Link to="#">Home Made Item 4 <i className="fa fa-angle-right"></i></Link></li>
+                  </ul>
+                </li>
+                <li>
+                <Link to="#">Re-Sale <i className="fa fa-angle-right"></i></Link>
+                  <ul className="category-sub-menu-list">
+                    <li><Link to="#">Re-Sale Item 1 <i className="fa fa-angle-right"></i></Link></li>
+                    <li><Link to="#">Re-Sale Item 2 <i className="fa fa-angle-right"></i></Link></li>
+                    <li><Link to="#">Re-Sale Item 3 <i className="fa fa-angle-right"></i></Link></li>
+                    <li><Link to="#">Re-Sale Item 4 <i className="fa fa-angle-right"></i></Link></li>
+                  </ul>
+                </li>
+                <li>
+                  <Link to="#">Souvenir <i className="fa fa-angle-right"></i></Link>
+                  <ul className="category-sub-menu-list">
+                    <li><Link to="#">Souvenir Item 1 <i className="fa fa-angle-right"></i></Link></li>
+                    <li><Link to="#">Souvenir Item 2 <i className="fa fa-angle-right"></i></Link></li>
+                    <li><Link to="#">Souvenir Item 3 <i className="fa fa-angle-right"></i></Link></li>
+                    <li><Link to="#">Souvenir Item 4 <i className="fa fa-angle-right"></i></Link></li>
+                  </ul>
           </li>
           <li>
             <Link to="#">SmartWatch <i className="fa fa-angle-right"></i></Link>

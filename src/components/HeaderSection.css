@@ -1,0 +1,226 @@
+
+header {
+    font-family: Arial, sans-serif;
+  }
+  
+ 
+  .header-top {
+    background-color: #030303;
+    padding: 10px 0;
+  }
+  
+  .header-top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-top-content ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .header-top-content-right li {
+    cursor: pointer;
+  }
+  .header-top-content-right li:hover {
+    text-decoration: underline;
+  }
+  
+
+  .header-middle {
+    background-color: #fff;
+    padding: 10px 0;
+  }
+  
+  .header-logo img {
+    width: 100%;
+    max-width: 150px;
+  }
+  
+  .header-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-search-form {
+    display: flex;
+    width: 100%;
+  }
+  
+  .form-control {
+    width: 75%;
+    padding: 10px;
+  }
+  
+  .select {
+    width: 20%;
+    padding: 10px;
+  }
+  
+  .header-carts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .header-carts-info {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .header-carts-info span {
+    margin-left: 5px;
+  }
+  
+  /* Bottom Header */
+  .header-bottom {
+    background-color: #f0f0f0;
+    padding: 15px 0;
+  }
+  
+  .header-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-bottom-nav-category {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .category-main-menu-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .category-sub-menu-list {
+    list-style-type: none;
+    padding-left: 15px;
+  }
+  
+  .category-sub-menu-list li {
+    margin: 5px 0;
+  }
+  
+  /* Links styling */
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 767px) {
+    /* Top Header adjustments */
+    .header-top-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header-top-content-left h4 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .header-top-content-right ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    /* Middle Header adjustments */
+    .header-middle {
+      text-align: center;
+    }
+  
+    .header-search {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header-search-form {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    .header-carts {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+    .header-carts-info a {
+        display: flex;
+        align-items: center;
+      }
+    .header-search-form .form-control,
+    .header-search-form .select,
+    .header-search-form button {
+      width: 100%;
+      margin-top: 15px;
+    }
+  
+    /* Bottom Header adjustments */
+    .header-bottom-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header-bottom-nav-category {
+        width: 100%;
+      }
+    
+      .category-main-menu-list {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .category-sub-menu-list {
+        padding-left: 10px;
+      }
+    
+      .header-bottom-nav-category h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    
+      .header-bottom-nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding-left: 0;
+        width: 100%;
+      }
+    
+      .header-bottom-nav-menu li {
+        width: 100%;
+      }
+    
+      /* Hotline */
+      .header-bottom-hotline {
+        text-align: center;
+        width: 100%;
+        margin-top: 15px;
+      }
+    
+      .header-bottom-hotline h5 {
+        font-size: 16px;
+     
+        .header-carts-info a i {
+            font-size: 20px;
+          }
+        
+          .header-carts-info span {
+            font-size: 12px;
+          }
+        }
+    }

@@ -6,17 +6,17 @@ import pc3 from "./../assets/images/pc3.png"
 export default function CategorySection() {
     const productCategoryList =[
         {
-            title: 'Headphones',
+            title: 'HOME MADE ',
             totalProduct: 4,
             imageUrl : pc1
         },
         {
-            title: 'Airpods',
+            title: 'RE-SALE',
             totalProduct: 4,
             imageUrl : pc2
         },
         {
-            title: 'Iphone',
+            title: 'SOUVENIR',
             totalProduct: 4,
             imageUrl : pc3
         },

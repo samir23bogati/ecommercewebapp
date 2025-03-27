@@ -19,25 +19,25 @@ export default function BannerSection() {
     const slides = [
         {
             id: 1,
-            title: "The Upcoming Best E-Mart In KTM",
-            price: "$555",
-            offer: "35%",
+            title: "THE UPCOMING BEST E-MART IN  KTM",
+            price: "NRS 99.99",
+            offer: "20%",
             imgSrc: slide2,
             imgAlt: "Notepad Collection",
         },
         {
             id: 2,
-            title: "Your one-stop shop, where Kathmandu shops like a Pro",
-            price: "$400",
-            offer: "50%",
+            title: "YOUR ONE-STOP SHOP, WHERE KATHMANDU SHOPS LIKE A PRO",
+            price: "NRS  99.99",
+            offer: "20%",
             imgSrc: slide1,
             imgAlt: "Mobile Collection",
         },
         {
             id: 3,
-            title: "Shop smarter, not harder – only at the best e-mart in Kathmandu",
-            price: "$999",
-            offer: "50%",
+            title: "SHOP SMARTER, NOT HARDER – ONLY AT THE BEST E-MART IN KATHMANDU",
+            price: "NRS 99.99",
+            offer: "23%",
             imgSrc: slide3,
             imgAlt: "Smart Watch Collection",
         },
@@ -53,11 +53,11 @@ export default function BannerSection() {
                                 <div className="row align-items-center">
                                     <div className="col-sm-6">
                                         <h4>
-                                            Starting at <span>{slide.price}</span>
+                                            STARTING AT <span>{slide.price}</span>
                                         </h4>
                                         <h3>{slide.title}</h3>
                                         <p>
-                                            Exclusive offer <span>{slide.offer}</span> for limited time
+                                            Exclusive offer <span>{slide.offer}</span> for limited time.
                                         </p>
                                     </div>
                                     <div className="col-sm-6">
