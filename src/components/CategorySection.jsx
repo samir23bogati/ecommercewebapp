@@ -1,14 +1,14 @@
 import "./CategorySection.css";
 import { Link } from "react-router-dom";
-import pc1 from "./../assets/images/pc1.png"
 import pc2 from "./../assets/images/pc2.png"
 import pc3 from "./../assets/images/pc3.png"
+import homemade1 from "./../assets/images/homemade.png"
 export default function CategorySection() {
     const productCategoryList =[
         {
             title: 'HOME MADE ',
             totalProduct: 4,
-            imageUrl : pc1
+            imageUrl : homemade1
         },
         {
             title: 'RE-SALE',
