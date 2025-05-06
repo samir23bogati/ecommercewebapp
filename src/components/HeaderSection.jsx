@@ -147,8 +147,7 @@ export default function HeaderSection() {
                 <li><Link to="/home">Home</Link></li>
                 <li><Link to="/products">Products</Link></li>
                 <li><Link to="/shop">Shop</Link></li>
-                <li><Link to="/coupons">Coupons</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
+                <li><Link to="/aboutus">About Us</Link></li>
               </ul>
             </div>
 

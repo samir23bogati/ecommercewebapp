@@ -14,12 +14,12 @@ export default function FeatureSection() {
         },
         {
             title: 'Member Discount',
-            subTitle: "Every order over $140.00",
+            subTitle: "Every order over NRS 3000",
             icon: 'sack-dollar'
         },
         {
             title: 'Customer Support',
-            subTitle: "Contact us 24 hours a day",
+            subTitle: "Contact 24/7  @+977-9813629126",
             icon: 'headset'
         },
     ];

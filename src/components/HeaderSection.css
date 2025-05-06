@@ -117,12 +117,13 @@ header {
     text-decoration: underline;
   }
   
-  /* Mobile Responsiveness */
+  /* --------------------- Mobile Responsiveness ------------------------------*/
   @media (max-width: 767px) {
     /* Top Header adjustments */
     .header-top-content {
       flex-direction: column;
       align-items: center;
+      text-align: center;
     }
   
     .header-top-content-left h4 {
@@ -134,16 +135,19 @@ header {
       flex-direction: column;
       align-items: center;
       gap: 10px;
+      padding: 0;
     }
   
     /* Middle Header adjustments */
     .header-middle {
       text-align: center;
+      padding: 10px 0;
     }
   
     .header-search {
       flex-direction: column;
       align-items: center;
+      width: 100%;
     }
   
     .header-search-form {
@@ -151,15 +155,28 @@ header {
       gap: 10px;
       width: 100%;
     }
+
+    .form-control,
+    .select,
+    .header-search-form button {
+      width: 100%;
+      margin-top: 10px;
+    }
   
     .header-carts {
       display: flex;
       justify-content: space-around;
       width: 100%;
+      gap: 15px;
+    }
+    .header-carts-info {
+      flex-direction: row;
+      gap: 10px;
     }
     .header-carts-info a {
         display: flex;
         align-items: center;
+        gap: 5px;
       }
     .header-search-form .form-control,
     .header-search-form .select,
@@ -171,7 +188,8 @@ header {
     /* Bottom Header adjustments */
     .header-bottom-content {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: flex-start; 
+      text-align: center;
     }
   
     .header-bottom-nav-category {
@@ -181,10 +199,13 @@ header {
       .category-main-menu-list {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        padding: 0;
       }
     
       .category-sub-menu-list {
-        padding-left: 10px;
+        padding-left: 0px;
+        text-align: center;
       }
     
       .header-bottom-nav-category h4 {
@@ -195,9 +216,9 @@ header {
       .header-bottom-nav-menu ul {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 10px;
-        padding-left: 0;
+        padding: 0;
         width: 100%;
       }
     
@@ -216,120 +237,12 @@ header {
         font-size: 16px;
      
         .header-carts-info a i {
-            font-size: 20px;
+            font-size: 22px;
           }
         
           .header-carts-info span {
-            font-size: 12px;
+            font-size: 14px;
           }
         }
-    }
-    @media (max-width: 767px) {
-      /* Top Header */
-      .header-top-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-    
-      .header-top-content-right ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 0;
-      }
-    
-      /* Middle Header */
-      .header-middle {
-        text-align: center;
-        padding: 10px 0;
-      }
-    
-      .header-search {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-      }
-    
-      .header-search-form {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-      }
-    
-      .form-control,
-      .select,
-      .header-search-form button {
-        width: 100%;
-        margin-top: 10px;
-      }
-    
-      .header-carts {
-        width: 100%;
-        justify-content: center;
-        gap: 15px;
-      }
-    
-      .header-carts-info {
-        flex-direction: row;
-        gap: 10px;
-      }
-    
-      .header-carts-info a {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-      }
-    
-      /* Bottom Header */
-      .header-bottom-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-    
-      .header-bottom-nav-category {
-        width: 100%;
-      }
-    
-      .category-main-menu-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-      }
-    
-      .category-sub-menu-list {
-        padding-left: 0;
-        text-align: center;
-      }
-    
-      .header-bottom-nav-menu ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 0;
-        width: 100%;
-      }
-    
-      .header-bottom-hotline {
-        text-align: center;
-        width: 100%;
-        margin-top: 15px;
-      }
-    
-      .header-bottom-hotline h5 {
-        font-size: 16px;
-      }
-    
-      /* Adjust icon and text size for better visibility */
-      .header-carts-info a i {
-        font-size: 22px;
-      }
-    
-      .header-carts-info span {
-        font-size: 14px;
-      }
     }
     

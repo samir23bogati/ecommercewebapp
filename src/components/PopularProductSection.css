@@ -1,20 +1,60 @@
-.popular-products-section-title{
+.popular-products-section {
+    background-color: #f8f9fa;
+}
+
+.popular-products-section-title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: #eee solid 1px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
-.popular-products-section-title h2{
+
+.popular-products-section-title h2 {
     color: #000;
     font-size: 36px;
     font-weight: 700;
+    margin: 0;
 }
+
+.popular-products-section-title .nav-pills {
+    gap: 10px;
+}
+
 .popular-products-section-title .nav-pills .nav-link {
-    color:#000;
-    font-size: 18px;
+    color: #000;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 6px 16px;
+    border: 1px solid #000;
+    transition: 0.3s ease;
 }
+
+.popular-products-section-title .nav-pills .nav-link:hover {
+    background-color: #000;
+    color: #fff;
+}
+
 .popular-products-section-title .nav-pills .nav-link.active,
-.popular-products-section-title .nav-pills .show>.nav-link{
-    background: #000;
-    color:#fff;
+.popular-products-section-title .nav-pills .show > .nav-link {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.popular-products-section-content .tab-pane {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Optional smooth animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
