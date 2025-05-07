@@ -27,6 +27,14 @@
     margin: 15px 0;
     text-decoration: none;
 }
+
+.categories-list-item-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
 @media (max-width: 768px) {
     .categories-list {
         flex-direction: column; 
@@ -38,12 +46,6 @@
         margin-bottom: 20px; 
     }
 
-    .categories-list-item-thumbnail img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        border-radius: 50%;
-    }
     
 
     .categories-list-item h4 a {
